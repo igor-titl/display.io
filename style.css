@@ -1,0 +1,45 @@
+
+		.custom-email-input:focus{
+			outline: none;
+  }
+
+	.custom-email-input::placeholder{
+  	color: #fff;
+    opacity: 50%;
+  }
+  
+  .slider-list__item {
+    cursor: pointer;
+    transition: height 0.3s ease; /* Плавный переход для анимации высоты */
+  }
+
+  .active-faq {
+    height: 264px !important;
+    transition: height 0.3s ease; /* Плавный переход для анимации высоты */
+  }
+
+  .animate {
+    height: auto !important;
+  }
+
+  .animate .slider-progress-bar__pink {
+    width: 100%;
+    transition: width 0.3s ease; /* Добавлено свойство transition для анимации ширины */
+  }
+  
+	.last-tab {
+    height: 264px !important;
+    transition: height 0.3s ease; /* Плавный переход для анимации высоты */
+  }
+  
+  .scoll-position__top{
+  	justify-content: start;
+  }
+
+	.scoll-position__center{
+  	justify-content: center;
+  }
+
+  .scoll-position__bottom{
+  	justify-content: end;
+  }
