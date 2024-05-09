@@ -4,10 +4,20 @@
 
 //----------------------------------------------
 //3D LOAD
-  window.addEventListener('load', function() {
-      var element = document.getElementById('3d-phone');
-      element.classList.add('visible'); // добавляем класс visible
-  });
+function onSplineLoad() {
+  const container = document.getElementById('3d-phone');
+  container.style.display = 'flex'; // Показываем контейнер после загрузки
+}
+
+const splineIframe = document.getElementById('spline-iframe');
+
+// Если iframe уже загружен, показываем сразу
+if (splineIframe.contentDocument.readyState === 'complete') {
+  onSplineLoad();
+} else {
+  // Добавляем обработчик события, чтобы знать, когда iframe загружен
+  splineIframe.addEventListener('load', onSplineLoad);
+}
 
 //CASE TABS
 

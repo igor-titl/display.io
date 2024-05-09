@@ -1,5 +1,9 @@
+    .hero-form-text.white::placeholder{
+        color: #0F0F0F;
+    opacity: 50%;
+    }
 
-		.custom-email-input:focus{
+    .custom-email-input:focus{
 			outline: none;
   }
 
