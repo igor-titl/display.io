@@ -4,20 +4,15 @@
 
 //----------------------------------------------
 //3D LOAD
-function onSplineLoad() {
+// Функция, которая срабатывает, когда iframe полностью загружен
+function onIframeLoad() {
   const container = document.getElementById('3d-phone');
-  container.style.display = 'flex'; // Показываем контейнер после загрузки
+  container.style.display = 'block'; // Показываем контейнер
 }
 
+// Добавляем обработчик события "load" к iframe
 const splineIframe = document.getElementById('spline-iframe');
-
-// Если iframe уже загружен, показываем сразу
-if (splineIframe.contentDocument.readyState === 'complete') {
-  onSplineLoad();
-} else {
-  // Добавляем обработчик события, чтобы знать, когда iframe загружен
-  splineIframe.addEventListener('load', onSplineLoad);
-}
+splineIframe.addEventListener('load', onIframeLoad);
 
 //CASE TABS
 
