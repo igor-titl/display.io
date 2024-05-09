@@ -4,15 +4,10 @@
 
 //----------------------------------------------
 //3D LOAD
-// Функция, которая срабатывает, когда iframe полностью загружен
-function onIframeLoad() {
-  const container = document.getElementById('3d-phone');
-  container.style.display = 'block'; // Показываем контейнер
-}
-
-// Добавляем обработчик события "load" к iframe
-const splineIframe = document.getElementById('spline-iframe');
-splineIframe.addEventListener('load', onIframeLoad);
+  window.addEventListener('load', function() {
+      var element = document.getElementById('3d-phone');
+      element.classList.add('visible');
+  });
 
 //CASE TABS
 
