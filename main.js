@@ -2,13 +2,6 @@
 //LAZY LOAD
 
 
-//----------------------------------------------
-//3D LOAD
-  window.addEventListener('load', function() {
-      var element = document.getElementById('3d-phone');
-      element.classList.add('visible');
-  });
-
 //CASE TABS
 
   // Get all tab links and tab content
